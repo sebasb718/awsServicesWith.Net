@@ -26,7 +26,8 @@ public class DataSeeder
             var ageRestriction = int.Parse(commaSplit[2]);
             var rottenTomatoes = int.Parse(commaSplit[3]);
 
-            var movie = new Movie
+            //movies-title-rotten
+            var movie1 = new MovieTitleRotten
             {
                 Id = Guid.NewGuid(),
                 Title = title,
@@ -35,17 +36,40 @@ public class DataSeeder
                 RottenTomatoesPercentage = rottenTomatoes
             };
             
-            var movieAsJson = JsonSerializer.Serialize(movie);
+            var movieAsJson = JsonSerializer.Serialize(movie1);
             var itemAsDocument = Document.FromJson(movieAsJson);
             var itemAsAttributes = itemAsDocument.ToAttributeMap();
 
             var createItemRequest = new PutItemRequest
             {
-                TableName = "movies",
+                TableName = "movies-title-rotten",
                 Item = itemAsAttributes
             };
 
             var response = await dynamoDb.PutItemAsync(createItemRequest);
+            await Task.Delay(300);
+
+            //movies-year-title
+            var movie2 = new MovieYearTitle
+            {
+                Id = Guid.NewGuid(),
+                Title = title,
+                AgeRestriction = ageRestriction,
+                ReleaseYear = year,
+                RottenTomatoesPercentage = rottenTomatoes
+            };
+
+            movieAsJson = JsonSerializer.Serialize(movie2);
+            itemAsDocument = Document.FromJson(movieAsJson);
+            itemAsAttributes = itemAsDocument.ToAttributeMap();
+
+            createItemRequest = new PutItemRequest
+            {
+                TableName = "movies-year-title",
+                Item = itemAsAttributes
+            };
+
+            response = await dynamoDb.PutItemAsync(createItemRequest);
             await Task.Delay(300);
         }
     }
