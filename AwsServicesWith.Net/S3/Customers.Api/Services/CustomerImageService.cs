@@ -31,14 +31,26 @@ public class CustomerImageService : ICustomerImageService
         return await _s3.PutObjectAsync(putObjectRequest);
     }
 
-    public Task<GetObjectResponse> GetImageAsync(Guid id)
+    public async Task<GetObjectResponse> GetImageAsync(Guid id)
     {
-        throw new NotImplementedException();
+        var getObjectRequest = new GetObjectRequest
+        {
+            BucketName = _bucketName,
+            Key = $"images/{id}",
+        };
+
+        return await _s3.GetObjectAsync(getObjectRequest);
     }
 
-    public Task<DeleteObjectResponse> DeleteImageAsync(Guid id)
+    public async Task<DeleteObjectResponse> DeleteImageAsync(Guid id)
     {
-        throw new NotImplementedException();
+        var deleteObjectRequest = new DeleteObjectRequest
+        {
+            BucketName = _bucketName,
+            Key = $"images/{id}",
+        };
+
+        return await _s3.DeleteObjectAsync(deleteObjectRequest);
     }
 }
 
