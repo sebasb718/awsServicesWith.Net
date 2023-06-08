@@ -1,4 +1,5 @@
-﻿using Customers.Api.Domain;
+﻿using Amazon.Runtime.Internal.Transform;
+using Customers.Api.Domain;
 using Customers.Api.Mapping;
 using Customers.Api.Repositories;
 using FluentValidation;
@@ -41,6 +42,12 @@ public class CustomerService : ICustomerService
     public async Task<Customer?> GetAsync(Guid id)
     {
         var customerDto = await _customerRepository.GetAsync(id);
+        return customerDto?.ToCustomer();
+    }
+
+    public async Task<Customer?> GetByEmailAsync(string email)
+    {
+        var customerDto = await _customerRepository.GetByEmailAsync(email);
         return customerDto?.ToCustomer();
     }
 
