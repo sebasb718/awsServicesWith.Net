@@ -39,6 +39,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SecretsManager", "SecretsMa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather.Api", "SecretsManager\Weather.Api\Weather.Api.csproj", "{D56094FE-8478-45B8-B2C9-526A9D099CBA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecretsManager.App", "SecretsManager\SecretsManager.App\SecretsManager.App.csproj", "{D8826170-AB90-44F2-A2F9-7F84086A323C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,10 @@ Global
 		{D56094FE-8478-45B8-B2C9-526A9D099CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D56094FE-8478-45B8-B2C9-526A9D099CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D56094FE-8478-45B8-B2C9-526A9D099CBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8826170-AB90-44F2-A2F9-7F84086A323C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8826170-AB90-44F2-A2F9-7F84086A323C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8826170-AB90-44F2-A2F9-7F84086A323C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8826170-AB90-44F2-A2F9-7F84086A323C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -115,6 +121,7 @@ Global
 		{D82A41FA-3278-44D7-BBDE-66C0E608F156} = {0ED9CE4F-672E-408B-8034-C28ED7B61161}
 		{BC5D6A05-3B74-4CF7-A80D-6BE1CBEA9933} = {0ED9CE4F-672E-408B-8034-C28ED7B61161}
 		{D56094FE-8478-45B8-B2C9-526A9D099CBA} = {E63FF115-C79C-4B7E-8E1E-1148F7BCA34E}
+		{D8826170-AB90-44F2-A2F9-7F84086A323C} = {E63FF115-C79C-4B7E-8E1E-1148F7BCA34E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1E2E0F5D-C87F-4376-93B9-D06B1D2EFC5D}
