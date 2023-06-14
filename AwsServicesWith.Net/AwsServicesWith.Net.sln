@@ -43,9 +43,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecretsManager.App", "Secre
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lambda", "Lambda", "{ACC4C58C-A7A8-4314-A36E-32FCF8E75AA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleLambda", "Lambda\SimpleLambda\src\SimpleLambda\SimpleLambda.csproj", "{2DE93A79-8B01-413C-A4D4-7120F03468D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleLambda", "Lambda\SimpleLambda\src\SimpleLambda\SimpleLambda.csproj", "{2DE93A79-8B01-413C-A4D4-7120F03468D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleHttpLambda", "Lambda\SimpleHttpLambda\src\SimpleHttpLambda\SimpleHttpLambda.csproj", "{E7F3CBDB-631F-4CA8-840B-AF0CE91E078E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleHttpLambda", "Lambda\SimpleHttpLambda\src\SimpleHttpLambda\SimpleHttpLambda.csproj", "{E7F3CBDB-631F-4CA8-840B-AF0CE91E078E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSqsLambda", "Lambda\SimpleSqsLambda\src\SimpleSqsLambda\SimpleSqsLambda.csproj", "{468E0DBE-65BE-463B-8DCB-94C0CB5C48BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{E7F3CBDB-631F-4CA8-840B-AF0CE91E078E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7F3CBDB-631F-4CA8-840B-AF0CE91E078E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7F3CBDB-631F-4CA8-840B-AF0CE91E078E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{468E0DBE-65BE-463B-8DCB-94C0CB5C48BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{468E0DBE-65BE-463B-8DCB-94C0CB5C48BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{468E0DBE-65BE-463B-8DCB-94C0CB5C48BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{468E0DBE-65BE-463B-8DCB-94C0CB5C48BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -138,6 +144,7 @@ Global
 		{D8826170-AB90-44F2-A2F9-7F84086A323C} = {E63FF115-C79C-4B7E-8E1E-1148F7BCA34E}
 		{2DE93A79-8B01-413C-A4D4-7120F03468D4} = {ACC4C58C-A7A8-4314-A36E-32FCF8E75AA3}
 		{E7F3CBDB-631F-4CA8-840B-AF0CE91E078E} = {ACC4C58C-A7A8-4314-A36E-32FCF8E75AA3}
+		{468E0DBE-65BE-463B-8DCB-94C0CB5C48BF} = {ACC4C58C-A7A8-4314-A36E-32FCF8E75AA3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1E2E0F5D-C87F-4376-93B9-D06B1D2EFC5D}
