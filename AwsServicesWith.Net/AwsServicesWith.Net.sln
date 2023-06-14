@@ -39,7 +39,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SecretsManager", "SecretsMa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather.Api", "SecretsManager\Weather.Api\Weather.Api.csproj", "{D56094FE-8478-45B8-B2C9-526A9D099CBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecretsManager.App", "SecretsManager\SecretsManager.App\SecretsManager.App.csproj", "{D8826170-AB90-44F2-A2F9-7F84086A323C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecretsManager.App", "SecretsManager\SecretsManager.App\SecretsManager.App.csproj", "{D8826170-AB90-44F2-A2F9-7F84086A323C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lambda", "Lambda", "{ACC4C58C-A7A8-4314-A36E-32FCF8E75AA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
