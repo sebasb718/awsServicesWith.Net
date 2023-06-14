@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "SimpleHttpLambda": {
+      "commandName": "Project"
+    },
+    "DebugSimpleHTTPLambda": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\j.bernal\\.dotnet\\tools\\dotnet-lambda-test-tool-6.0.exe",
+      "workingDirectory": "C:\\Users\\j.bernal\\Documents\\Self training\\AWSServicesWith.Net\\awsServicesWith.Net\\AwsServicesWith.Net\\Lambda\\SimpleHttpLambda\\src\\SimpleHttpLambda"
+    }
+  }
+}
