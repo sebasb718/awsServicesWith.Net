@@ -47,13 +47,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleLambda", "Lambda\Simp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleHttpLambda", "Lambda\SimpleHttpLambda\src\SimpleHttpLambda\SimpleHttpLambda.csproj", "{E7F3CBDB-631F-4CA8-840B-AF0CE91E078E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSqsLambda", "Lambda\SimpleSqsLambda\src\SimpleSqsLambda\SimpleSqsLambda.csproj", "{468E0DBE-65BE-463B-8DCB-94C0CB5C48BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleSqsLambda", "Lambda\SimpleSqsLambda\src\SimpleSqsLambda\SimpleSqsLambda.csproj", "{468E0DBE-65BE-463B-8DCB-94C0CB5C48BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSnsLambda", "Lambda\SimpleSnsLambda\src\SimpleSnsLambda\SimpleSnsLambda.csproj", "{516CF820-2588-4017-A22B-010B7D345FAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleSnsLambda", "Lambda\SimpleSnsLambda\src\SimpleSnsLambda\SimpleSnsLambda.csproj", "{516CF820-2588-4017-A22B-010B7D345FAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDynamoDbLambda", "Lambda\SimpleDynamoDbLambda\src\SimpleDynamoDbLambda\SimpleDynamoDbLambda.csproj", "{C2C77047-6378-4237-B1BC-003D2D2E7E34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleDynamoDbLambda", "Lambda\SimpleDynamoDbLambda\src\SimpleDynamoDbLambda\SimpleDynamoDbLambda.csproj", "{C2C77047-6378-4237-B1BC-003D2D2E7E34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleS3Lambda", "Lambda\SimpleS3Lambda\src\SimpleS3Lambda\SimpleS3Lambda.csproj", "{7305394D-D63C-461D-BD5C-FF9191168B7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleS3Lambda", "Lambda\SimpleS3Lambda\src\SimpleS3Lambda\SimpleS3Lambda.csproj", "{7305394D-D63C-461D-BD5C-FF9191168B7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleApiLambda", "Lambda\SimpleApiLambda\SimpleApiLambda.csproj", "{EA076ACA-24E4-422A-8665-7B98FF8DB0CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCustomLambda", "Lambda\SimpleCustomLambda\src\SimpleCustomLambda\SimpleCustomLambda.csproj", "{F46C51EC-DAD2-48A4-8B0C-DE8EE12A13D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +145,14 @@ Global
 		{7305394D-D63C-461D-BD5C-FF9191168B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7305394D-D63C-461D-BD5C-FF9191168B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7305394D-D63C-461D-BD5C-FF9191168B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA076ACA-24E4-422A-8665-7B98FF8DB0CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA076ACA-24E4-422A-8665-7B98FF8DB0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA076ACA-24E4-422A-8665-7B98FF8DB0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA076ACA-24E4-422A-8665-7B98FF8DB0CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F46C51EC-DAD2-48A4-8B0C-DE8EE12A13D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F46C51EC-DAD2-48A4-8B0C-DE8EE12A13D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F46C51EC-DAD2-48A4-8B0C-DE8EE12A13D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F46C51EC-DAD2-48A4-8B0C-DE8EE12A13D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -166,6 +178,8 @@ Global
 		{516CF820-2588-4017-A22B-010B7D345FAC} = {ACC4C58C-A7A8-4314-A36E-32FCF8E75AA3}
 		{C2C77047-6378-4237-B1BC-003D2D2E7E34} = {ACC4C58C-A7A8-4314-A36E-32FCF8E75AA3}
 		{7305394D-D63C-461D-BD5C-FF9191168B7E} = {ACC4C58C-A7A8-4314-A36E-32FCF8E75AA3}
+		{EA076ACA-24E4-422A-8665-7B98FF8DB0CC} = {ACC4C58C-A7A8-4314-A36E-32FCF8E75AA3}
+		{F46C51EC-DAD2-48A4-8B0C-DE8EE12A13D2} = {ACC4C58C-A7A8-4314-A36E-32FCF8E75AA3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1E2E0F5D-C87F-4376-93B9-D06B1D2EFC5D}
